@@ -10,3 +10,6 @@ If you are still using notifyDataSetChanged() then you are forcing the entire li
 
 
 ListAdapter helps you by calculating which methods to invoke out of inserted/changed/removed.
+
+
+you can use any of itemAnimators.Thank to this: https://github.com/mikepenz/ItemAnimators
