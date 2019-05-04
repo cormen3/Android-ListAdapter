@@ -1,11 +1,13 @@
-package hossein.gheisary.recycleview
+package hossein.gheisary.recycleview.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
+import hossein.gheisary.recycleview.R
+import hossein.gheisary.recycleview.itemanimators.SlideInOutRightAnimator
+import hossein.gheisary.recycleview.model.DataGenerator
+import hossein.gheisary.recycleview.model.ListItem
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.*
 
 class MainActivity : AppCompatActivity(){
     private lateinit var itemList : List<ListItem>
@@ -25,7 +27,7 @@ class MainActivity : AppCompatActivity(){
     private fun setupList() {
         itemArrayAdapter = ItemArrayAdapter()
         mainRecyclerView.layoutManager = LinearLayoutManager(this)
-        mainRecyclerView.itemAnimator = DefaultItemAnimator()
+        mainRecyclerView.itemAnimator = SlideInOutRightAnimator(mainRecyclerView)
         mainRecyclerView.adapter = itemArrayAdapter
 
         itemList = DataGenerator.get()

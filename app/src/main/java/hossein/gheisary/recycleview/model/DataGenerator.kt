@@ -1,4 +1,4 @@
-package hossein.gheisary.recycleview
+package hossein.gheisary.recycleview.model
 
 class DataGenerator {
     private val post1 = ListItem("Item 1")

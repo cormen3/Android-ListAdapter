@@ -1,4 +1,4 @@
-package hossein.gheisary.recycleview
+package hossein.gheisary.recycleview.ui
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import hossein.gheisary.recycleview.R
+import hossein.gheisary.recycleview.model.ListItem
 import kotlinx.android.synthetic.main.my_item_view.view.*
 
 class ItemArrayAdapter: ListAdapter<ListItem, RecyclerView.ViewHolder>(ListItemCallback()) {
